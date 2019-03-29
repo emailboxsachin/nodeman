@@ -1,0 +1,23 @@
+<!-- Page Heading -->
+<h1 class="my-4">Project 
+<a href="/project?action=new" class="button default float-right"><img src="/images/baseline-add_circle-24px (1).svg"></a>
+</h1>
+<div class="row">       
+{{#each project }}
+    <div class="col-lg-6 portfolio-item">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="/projectholder/projectSupport/{{this.id}}">{{this.name}}</a>
+          </h4>          
+          <p class="card-text">{{this.location}} </p>
+          <small>
+            <p>{{this.projectDirector}}</p>
+            <a href="/project/update/{{this.id}}" class="btn btn-primary">Update</a>
+          </small>
+        </div>
+      </div>
+    </div>
+{{/each}}
+</div>
+
