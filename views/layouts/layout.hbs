@@ -1,101 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>{{title}}</title>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" >
-    <!-- Custom styles for this template -->
-    <style type="text/css">
-      html {
-        font-size: 14px;
+    <title>Black &amp; White</title>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/pace.css">
+      <link rel="stylesheet" href="css/custom.css">
+
+      <!-- js -->
+      <script src="js/jquery-2.1.3.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/pace.min.js"></script>
+      <script src="js/modernizr.custom.js"></script>
+      <style type="text/css">
+        #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: red; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
       }
-      @media (min-width: 768px) {
-        html {
-          font-size: 16px;
+
+      #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+      }
+      </style>
+  </head>
+    <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+    <div class="container"> 
+      <header id="site-header">
+        <div class="row">
+          <div class="col-md-4 col-sm-5 col-xs-8">
+            <div class="logo">
+              <h1><a href="index.html"><b>Node</b>Man</a></h1>
+            </div>
+          </div><!-- col-md-4 -->
+          <div class="col-md-8 col-sm-7 col-xs-4">
+            <nav class="main-nav" role="navigation">
+              <div class="navbar-header">
+                  <button type="button" id="trigger-overlay" class="navbar-toggle">
+                    <span class="ion-navicon"></span>
+                  </button>
+              </div>
+
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="cl-effect-11"><a href="index.html" data-hover="Home">Home</a></li>
+                    <li class="cl-effect-11"><a href="full-width.html" data-hover="Blog">Blog</a></li>
+                    <li class="cl-effect-11"><a href="about.html" data-hover="About">About</a></li>
+                    <li class="cl-effect-11"><a href="contact.html" data-hover="Contact">Contact</a></li>
+                  </ul>
+              </div><!-- /.navbar-collapse -->
+            </nav>
+            <div id="header-search-box">
+              <a id="search-menu" href="#"><span id="search-icon" class="ion-ios-search-strong"></span></a>
+              <div id="search-form" class="search-form">
+                <form role="search" method="get" id="searchform" action="#">
+                  <input type="search" placeholder="Search" required>
+                  <button type="submit"><span class="ion-ios-search-strong"></span></button>
+                </form>       
+              </div>
+            </div>
+          </div><!-- col-md-8 -->
+        </div>
+      </header>
+    </div>
+
+    <div class="content-body">
+      <div class="container">
+        <div class="row">
+          <main class="col-md-8">
+            <article class="post post-1">
+              <header class="entry-header">
+                <h1 class="entry-title">
+                  <a href="single.html">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+                </h1>
+                <div class="entry-meta">
+                  <span class="post-category"><a href="#">Web Design</a></span>
+      
+                  <span class="post-date"><a href="#"><time class="entry-date" datetime="2012-11-09T23:15:57+00:00">February 2, 2013</time></a></span>
+      
+                  <span class="post-author"><a href="#">Albert Einstein</a></span>
+      
+                  <span class="comments-link"><a href="#">4 Comments</a></span>
+                </div>
+              </header>
+              <div class="entry-content clearfix">
+                <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
+                <div class="read-more cl-effect-14">
+                  <a href="single.html" class="more-link">Continue reading <span class="meta-nav">→</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="post post-2">
+              <header class="entry-header">
+                <h1 class="entry-title">
+                  <a href="single.html">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+                </h1>
+                <div class="entry-meta">
+                  <span class="post-category"><a href="#">Web Design</a></span>
+      
+                  <span class="post-date"><a href="#"><time class="entry-date" datetime="2012-11-09T23:15:57+00:00">February 2, 2013</time></a></span>
+      
+                  <span class="post-author"><a href="#">Albert Einstein</a></span>
+      
+                  <span class="comments-link"><a href="#">4 Comments</a></span>
+                </div>
+              </header>
+              <div class="entry-content clearfix">
+                <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
+                <div class="read-more cl-effect-14">
+                  <a href="single.html" class="more-link">Continue reading <span class="meta-nav">→</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="post post-3">
+              <header class="entry-header">
+                <h1 class="entry-title">
+                  <a href="single.html">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+                </h1>
+                <div class="entry-meta">
+                  <span class="post-category"><a href="#">Web Design</a></span>
+      
+                  <span class="post-date"><a href="#"><time class="entry-date" datetime="2012-11-09T23:15:57+00:00">February 2, 2013</time></a></span>
+      
+                  <span class="post-author"><a href="#">Albert Einstein</a></span>
+      
+                  <span class="comments-link"><a href="#">4 Comments</a></span>
+                </div>
+              </header>
+              <div class="entry-content clearfix">
+                <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
+                <div class="read-more cl-effect-14">
+                  <a href="single.html" class="more-link">Continue reading <span class="meta-nav">→</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="post post-4">
+              <header class="entry-header">
+                <h1 class="entry-title">
+                  <a href="single.html">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+                </h1>
+                <div class="entry-meta">
+                  <span class="post-category"><a href="#">Web Design</a></span>
+      
+                  <span class="post-date"><a href="#"><time class="entry-date" datetime="2012-11-09T23:15:57+00:00">February 2, 2013</time></a></span>
+      
+                  <span class="post-author"><a href="#">Albert Einstein</a></span>
+      
+                  <span class="comments-link"><a href="#">4 Comments</a></span>
+                </div>
+              </header>
+              <div class="entry-content clearfix">
+                <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
+                <div class="read-more cl-effect-14">
+                  <a href="single.html" class="more-link">Continue reading <span class="meta-nav">→</span></a>
+                </div>
+              </div>
+            </article>
+          </main>
+          <aside class="col-md-4">
+            <div class="widget widget-recent-posts">    
+              <h3 class="widget-title">Recent Posts</h3>    
+              <ul>
+                <li>
+                  <a href="#">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+                </li>
+                <li>
+                  <a href="#">Web Design is 95% Typography</a>
+                </li>
+                <li>
+                  <a href="#">Paper by FiftyThree</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget widget-archives">    
+              <h3 class="widget-title">Archives</h3>    
+              <ul>
+                <li>
+                  <a href="#">November 2014</a>
+                </li>
+                <li>
+                  <a href="#">September 2014</a>
+                </li>
+                <li>
+                  <a href="#">January 2013</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="widget widget-category">    
+              <h3 class="widget-title">Category</h3>    
+              <ul>
+                <li>
+                  <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <a href="#">SEO</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <footer id="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="copyright">&copy; 2019 NodeMan.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="overlay overlay-hugeinc">
+      <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="full-width.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
         }
       }
 
-      .container {
-        max-width: 960px;
-      }
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      } 
+    </script>
 
-      .pricing-header {
-        max-width: 700px;
-      }
-
-      .card-deck .card {
-        min-width: 220px;
-      }
-    </style>
-  </head>
-
-<body>
-
-  <!-- Navigation -->
-  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-    <h5 class="my-0 mr-md-auto font-weight-normal">HCDI - PMS</h5>
-    <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="/">Home</a>
-      <a class="p-2 text-dark" href="/projectsupport">Project Support</a>
-    <!--   <a class="p-2 text-dark" href="#">Enterprise</a>
-      <a class="p-2 text-dark" href="#">Support</a>
-      <a class="p-2 text-dark" href="#">Pricing</a> -->
-    </nav>
-    <a class="btn btn-outline-primary" href="#">Sign up</a>
-  </div>
-
-
-  {{{ body }}}
-  
-  <!-- The Footer -->
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-12 col-md">
-        <!-- <img class="mb-2" src="img/bootstrap-solid.svg" alt="" width="24" height="24"> -->
-        <!-- <small class="d-block mb-3 text-muted">&copy; 2017-2019</small> -->
-      </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Cool stuff</a></li>
-          <li><a class="text-muted" href="#">Random feature</a></li>
-          <li><a class="text-muted" href="#">Team feature</a></li>
-          <li><a class="text-muted" href="#">Stuff for developers</a></li>
-          <li><a class="text-muted" href="#">Another one</a></li>
-          <li><a class="text-muted" href="#">Last time</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Resource</a></li>
-          <li><a class="text-muted" href="#">Resource name</a></li>
-          <li><a class="text-muted" href="#">Another resource</a></li>
-          <li><a class="text-muted" href="#">Final resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-          <li><a class="text-muted" href="#">Locations</a></li>
-          <li><a class="text-muted" href="#">Privacy</a></li>
-          <li><a class="text-muted" href="#">Terms</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/app.js"></script>
-</body>
-
+  </body>
 </html>
