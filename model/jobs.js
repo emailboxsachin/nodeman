@@ -1,14 +1,10 @@
 var mongoose = require('mongoose')
 var Schema = mongoose.Schema
-var ProjectSupportSchema = new Schema({
-  name:String,
-  place:String,
-  personincharge:String,
-  address1:String,
-  address2:String,
+var JobSchema = new Schema({
+  title:String,
   phone:Number,
   email:String,
-  timeStamp:{type:Date,default:Date.now},
-  user:String
+  details:String,
+  published:{type:Date,default:Date.now},
 })
-module.exports = mongoose.model('ProjectSupport',ProjectSupportSchema)
+module.exports = mongoose.model('Job',JobSchema)

@@ -17,6 +17,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 app.get('/', jobsRoute.getAllJobs)
+app.get('/postJobPage', function(req,res,next){console.log('post job page')}, jobsRoute.getpostJobPage)
+app.get('/postJob', jobsRoute.postJob)
 
 
 app.listen(port)

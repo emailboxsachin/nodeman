@@ -6,7 +6,23 @@ module.exports.getAllJobs = function(req,res,next){
 		if(err){
 			res.send('error occured' + JSON.stringify(err))
 		}else{
-			res.render('index',{jobs:data})	
+			res.render('jobs',{jobs:data})	
+		}
+	})
+}
+
+module.exports.getpostJobPage = function(req,res,next){
+	console.log('getpostJobPage')
+	res.render('postJobsPage')	
+}
+
+module.exports.postJob = function(req,res,next){
+	model.create(req.body,function(err,job){
+		if(err){
+			res.send('error')
+		}else{
+			console.log('inserted data'+job)
+			res.redirect('/')
 		}
 	})
 }
