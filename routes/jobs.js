@@ -6,7 +6,7 @@ module.exports.getAllJobs = function(req,res,next){
 		if(err){
 			res.send('error occured' + JSON.stringify(err))
 		}else{
-			res.render('index',{title:'Node Man', jobs:data})	
+			res.render('index',{jobs:data})	
 		}
 	})
 }
