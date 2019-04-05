@@ -2,7 +2,7 @@ var mongoose = require('mongoose')
 var Schema = mongoose.Schema
 var JobSchema = new Schema({
   title:String,
-  phone:Number,
+  phone:String,
   email:String,
   details:String,
   published:{type:Date,default:Date.now},

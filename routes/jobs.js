@@ -2,7 +2,7 @@ var model= require('../model/jobs')
 
 module.exports.getAllJobs = function(req,res,next){
 	// model.find({}).sort({timeStamp: 'desc'}).select('_id name email address1').exec((err,ph)=>{
-	model.find({}).sort({timeStamp: 'desc'}).exec((err,data)=>{	
+	model.find({}).sort({published: 'desc'}).exec((err,data)=>{	
 		if(err){
 			res.send('error occured' + JSON.stringify(err))
 		}else{
@@ -12,11 +12,11 @@ module.exports.getAllJobs = function(req,res,next){
 }
 
 module.exports.getpostJobPage = function(req,res,next){
-	console.log('getpostJobPage')
 	res.render('postJobsPage')	
 }
 
 module.exports.postJob = function(req,res,next){
+	console.log('body '+JSON.stringify(req.body))
 	model.create(req.body,function(err,job){
 		if(err){
 			res.send('error')
