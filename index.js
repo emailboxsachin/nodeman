@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', jobsRoute.getAllJobs)
 app.get('/postJobPage', jobsRoute.getpostJobPage)
+app.post('/validatePostedJob', jobsRoute.validatePostedJob)
 app.post('/postJob', jobsRoute.postJob)
 
 
