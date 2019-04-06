@@ -7,12 +7,13 @@
 			</div>
 		</div>
 		<div class="row">
-			{{#if postedJob}}
-				
-					<div class="col-md-7 col-md-push-1">
+			{{#if postedJob}}				
+					<div class="col-md-12 col-md-push-1">
 						<div class="row">
 							<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-								<span class="heading-meta">Confirm details</span>
+								<span class="heading-meta">Step 2 Confirm details</span>
+								<a href="https://www.instamojo.com/@instamojo/" rel="im-checkout" data-behaviour="remote" data-style="light" data-text="Checkout With Instamojo" ></a>
+<script src="https://d2xwmjc4uy2hr5.cloudfront.net/im-embed/im-embed.min.js"></script> 
 								{{#with postedJob}}
 								<form action="/postJob" method="post">
 									<div class="form-group">
@@ -41,6 +42,7 @@
 				<div class="col-md-12 col-md-push-1">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+							<span class="heading-meta">Step 1 Add details</span>
 							<form action="/validatePostedJob" method="post">
 								<div class="form-group">
 									<input type="text" class="form-control" name="title" placeholder="Title">

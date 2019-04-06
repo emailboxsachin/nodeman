@@ -17,6 +17,7 @@ module.exports.getpostJobPage = function(req,res,next){
 
 module.exports.validatePostedJob = function(req,res,next){
 	console.log('body '+JSON.stringify(req.body))
+	req.body.details.trim()
 	res.render('postJobsPage',{postedJob:req.body})	
 }
 
