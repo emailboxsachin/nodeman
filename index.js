@@ -6,7 +6,7 @@ const jobsRoute = require('./routes/jobs')
 var mongoose = require('mongoose');
 const app = express()
 var db = mongoose.connect('mongodb://localhost/nodeman');
-const port = 3001
+const port = 1001
 
 app.engine('hbs', hbs({extname:'hbs', defaultLayout:'layout',layoutDir:__dirname + '/views/layouts/'}))
 app.set('views', path.join(__dirname, 'views'))
