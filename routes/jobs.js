@@ -1,7 +1,6 @@
 var model= require('../model/jobs')
 
 module.exports.getAllJobs = function(req,res,next){
-	// model.find({}).sort({timeStamp: 'desc'}).select('_id name email address1').exec((err,ph)=>{
 	model.find({}).sort({published: 'desc'}).exec((err,data)=>{	
 		if(err){
 			res.send('error occured' + JSON.stringify(err))
@@ -11,7 +10,7 @@ module.exports.getAllJobs = function(req,res,next){
 	})
 }
 
-module.exports.getpostJobPage = function(req,res,next){
+module.exports.getPostJobPage = function(req,res,next){
 	res.render('postJobsPage')	
 }
 
