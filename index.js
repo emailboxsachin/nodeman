@@ -3,6 +3,7 @@ const path = require('path')
 const bodyParser = require('body-parser');
 const hbs = require('express-handlebars')
 const jobsRoute = require('./routes/jobs')
+import {getAllJobs} from './routes/jobs'
 var mongoose = require('mongoose');
 const app = express()
 var db = mongoose.connect('mongodb://localhost/nodeman');
